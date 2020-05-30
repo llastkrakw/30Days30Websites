@@ -264,7 +264,7 @@ a {
 }
 
 .card {
-    margin: 15px;
+    margin: 15px 20px;
     min-width: 300px;
     height: 380px;
     -webkit-box-shadow: 6px 6px 14px 0 rgba(230, 85, 85, 0.2), -4px -4px 8px 0 rgba(255, 255, 255, 0.55);
@@ -272,6 +272,16 @@ a {
     border-radius: 20px;
     padding: 4px 30px 20px;
     min-height: 380px;
+    transition: all ease-in-out 1s;
+    cursor: pointer;
+}
+
+.card:hover {
+    background-attachment: #000;
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
+    z-index: 50;
 }
 
 
