@@ -98,6 +98,7 @@ body {
     font-size: 3em;
 }
 
+main,
 p {
     -webkit-animation: enter 3s ease-in forwards;
     animation: enter 3s ease-in forwards;
@@ -255,7 +256,7 @@ a {
 }
 
 .cards-container {
-    margin-top: 80px;
+    margin-top: 60px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -286,14 +287,43 @@ a {
 
 .card:hover {
     background-attachment: #000;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
     z-index: 50;
 }
 
 .card:hover~.card {
     transform: translateX(8%);
+}
+
+.next,
+.prev {
+    font-family: "Roboto";
+    font-size: 2em;
+    font-weight: bolder;
+    letter-spacing: 5px;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.next {
+    position: absolute;
+    right: 50px;
+    top: 50%;
+}
+
+.prev {
+    position: absolute;
+    left: 50px;
+    top: 50%;
+}
+
+.next:hover,
+.prev:hover {
+    transform: translate3d(20px, 20px, 10px);
+    border-top: 2px solid #fff;
+    border-bottom: 2px solid #fff;
 }
 
 
