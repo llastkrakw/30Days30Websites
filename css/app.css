@@ -12,20 +12,7 @@
 
 **/
 
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins/Poppins-Medium.ttf") format('ttf');
-}
 
-@font-face {
-    font-family: "Roboto";
-    src: url("../fonts/Roboto/Roboto-Medium.ttf") format('ttf');
-}
-
-@font-face {
-    font-family: "Lobster";
-    src: url("../fonts/Lobster/Lobster-Regular.ttf") format('ttf');
-}
 
 
 /**
@@ -71,7 +58,7 @@ body {
     padding: 10px;
     width: 70px;
     height: auto;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 1.2em;
 }
 
@@ -88,7 +75,7 @@ body {
     -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: 50px;
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: bolder;
     font-size: 2em;
 }
@@ -116,12 +103,12 @@ p {
 
 .name {
     text-align: center;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: lighter;
 }
 
 .side {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-weight: 400;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
@@ -163,7 +150,7 @@ p {
     align-items: center;
     margin-top: 100px;
     padding: 100px 0;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-size: 1.5em;
     opacity: 0.8;
 }
@@ -183,7 +170,7 @@ p {
     -ms-flex-align: center;
     align-items: center;
     justify-items: center;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: 700;
     letter-spacing: 5px;
     line-height: 15px;
@@ -224,7 +211,7 @@ a {
     padding: 15px;
     text-align: center;
     font-size: 2em;
-    font-family: "Poppins";
+    font-family: "Poppins", sans-serif;
     font-weight: bolder;
 }
 
@@ -299,7 +286,7 @@ a {
 
 .next,
 .prev {
-    font-family: "Roboto";
+    font-family: "Roboto", sans-serif;
     font-size: 2em;
     font-weight: bolder;
     letter-spacing: 5px;
