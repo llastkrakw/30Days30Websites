@@ -147,6 +147,7 @@ message grid-element
 **/
 
 .message {
+    position: relative;
     transition: all ease-in-out 2s;
 }
 

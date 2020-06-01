@@ -52,42 +52,11 @@ var vm = new Vue({
     el: '#caroussel',
     data: {
         sites: [
-            { id: 1, img: 'Mon initiation avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 2, img: 'Blogger avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 3, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 4, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 5, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 6, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 7, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 8, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 9, img: 'Mon initiation avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 10, img: 'Blogger avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 11, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 12, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 13, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 14, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 15, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 16, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 17, img: 'Mon initiation avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 18, img: 'Blogger avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 19, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 20, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 21, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 22, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 23, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 24, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 25, img: 'Mon initiation avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 26, img: 'Blogger avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 27, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 28, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 29, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
-            { id: 30, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' }
+            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', codepenLink: 'https://codepen.io/llastkrakw/pen/xxZKrjm', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
         ],
 
         activeItems: [
-            { id: 1, img: 'Mon initiation avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 2, img: 'Blogger avec Vue', desc: '', codepenLink: '', name: '' },
-            { id: 3, img: 'Pourquoi Vue est tellement cool', desc: '', codepenLink: '', name: '' },
+            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', codepenLink: 'https://codepen.io/llastkrakw/pen/xxZKrjm', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
         ],
     },
 
@@ -159,6 +128,12 @@ var vm = new Vue({
                 console.log(this.activeItems);
 
             }
+        },
+
+        redirect: function(id) {
+
+            var element = this.activeItems[id];
+            window.location.href = element.url;
         }
     }
 })

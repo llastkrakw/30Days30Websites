@@ -121,7 +121,7 @@ var backToPrevious = () => {
             case 5:
                 message.style.backgroundImage = " url(\"./assets/background-7.jpg\"), url(\"./assets/background-8.jpg\")";
                 message.style.backgroundRepeat = "no-repeat, no-repeat"
-                message.style.backgroundSize = "contains, 250% 50%";
+                message.style.backgroundSize = "contain, 250% 50%";
                 break;
         }
 
