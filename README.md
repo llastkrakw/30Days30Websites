@@ -8,16 +8,16 @@ And
 
 [My Codepen there](https://codepen.io/llastkrakw)
 
-#Projects List
+## Projects List
 
 1. Ogbon
 
-⋅⋅*Display grid: 
+⋅⋅* Display grid: 
 ![alt text]("https://github.com/llastkrakw/30Days30Websites/blob/master/projects/ogbon/assets/gridDisplay.png")
 
-⋅⋅*Final: 
-![alt text]("https://github.com/llastkrakw/30Days30Websites/blob/master/projects/ogbon/assets/gridDisplay.png")
+⋅⋅* Final: 
+![alt text]("https://github.com/llastkrakw/30Days30Websites/blob/master/projects/ogbon/assets/preview.png")
 
-⋅⋅*[Ogbon](https://llastkrakw.github.io/30Days30Websites/projects/ogbon/)
+⋅⋅* [Ogbon](https://llastkrakw.github.io/30Days30Websites/projects/ogbon/)
 
-⋅⋅*[Ogbon/codepen](https://codepen.io/llastkrakw/pen/xxZKrjm)
+⋅⋅* [Ogbon/codepen](https://codepen.io/llastkrakw/pen/xxZKrjm)
