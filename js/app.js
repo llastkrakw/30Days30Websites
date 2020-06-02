@@ -52,11 +52,11 @@ var vm = new Vue({
     el: '#caroussel',
     data: {
         sites: [
-            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', codepenLink: 'https://codepen.io/llastkrakw/pen/xxZKrjm', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
+            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
         ],
 
         activeItems: [
-            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', codepenLink: 'https://codepen.io/llastkrakw/pen/xxZKrjm', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
+            { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
         ],
     },
 
@@ -130,10 +130,5 @@ var vm = new Vue({
             }
         },
 
-        redirect: function(id) {
-
-            var element = this.activeItems[id];
-            window.location.href = element.url;
-        }
     }
 })

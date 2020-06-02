@@ -53,12 +53,11 @@
         <div class="next" v-on:click="goToNext()">Next</div><br>
         <div class="prev" v-on:click="backToPrevious()">Prev</div>
         <div class="cards-container">
-            <div class="card" v-for="item in activeItems" @click="redirect(item.id)">
+            <div class="card" v-for="item in activeItems">
                 <h1 class="index">#{{item.id}}</h1>
                 <div class="preview" :style="[item.img ? {'background': 'url(' + item.img + ') no-repeat', 'background-size': 'contain'} : {'background': '#FFF'}]"></div>
                 <p class="card-title"><a v-bind:href="item.url">{{item.name}}</a></p>
                 <blockquote class="card-desc">{{item.desc}}</blockquote>
-                <p><a v-bind:href="item.codepenLink">codepen</a></p>
             </div>
         </div>
     </div>
