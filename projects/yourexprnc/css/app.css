@@ -1,0 +1,413 @@
+/**
+
+box-sixing
+ 
+**/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+
+elements
+ 
+**/
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+
+/**
+
+menu
+ 
+**/
+
+.menu {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    justify-items: centerSS;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 5%;
+    -webkit-box-shadow: 1px 0 3px #222222;
+    -moz-box-shadow: 1px 0 3px #222222;
+    box-shadow: 1px 0 3px #222222;
+    z-index: 1000;
+    background: #fff;
+}
+
+.menu-element {
+    transform: rotate(90deg);
+    font-weight: bolder;
+    color: #bbbdbf;
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+}
+
+.menu-element:hover {
+    color: #2a2e43;
+}
+
+.active {
+    color: #2a2e43;
+}
+
+.active::after {
+    content: '';
+    display: block;
+    transform: translateY(32px) translateX(-23px);
+    width: 100px;
+    height: 12px;
+    background: #2a2e43;
+}
+
+
+/**
+
+form
+ 
+**/
+
+.form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    position: absolute;
+    padding: 50px;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 700px;
+    background: #193eef;
+    color: #fff;
+}
+
+.form-title {
+    margin-top: 25px;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+
+.form-bar {
+    margin-top: 25px;
+    width: 50px;
+    height: 5px;
+    background: #fff;
+    border-radius: 15px;
+}
+
+.form-text {
+    margin-top: 25px;
+    opacity: 0.8;
+    font-weight: 300;
+    line-height: 1.5em;
+}
+
+.form-email {
+    margin-top: 25px;
+    width: 300px;
+    padding: 30px;
+    background: #193eef;
+    border: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bolder;
+}
+
+.form-email::placeholder {
+    color: #fff;
+    opacity: 0.8;
+    font-weight: bolder;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-button {
+    margin-top: 25px;
+    width: 300px;
+    padding: 25px;
+    background: #fff;
+    color: #193eef;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: all ease-in-out 1s;
+}
+
+.form-button:hover {
+    background: #ffcd00;
+    color: #fff;
+}
+
+
+/**
+
+middle
+ 
+**/
+
+.middle {
+    display: flex;
+    flex-direction: column;
+    padding: 30px 0 0 180px;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    font-weight: 800;
+    color: #2a2e43;
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+.logo-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #2a2e43;
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin-right: 10px;
+    border-radius: 50px;
+}
+
+.logo-name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.middle-title {
+    width: 100px;
+    font-size: 4em;
+    font-weight: 800;
+    padding: 40px 20px 20px 0;
+}
+
+.back-title {
+    font-size: 12em;
+    font-weight: 800;
+    color: #f2f2f2;
+    transform: translateY(-120px) translateX(-100px);
+    z-index: -10000;
+}
+
+
+/**
+
+grid
+ 
+**/
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 512px 512px;
+    grid-template-rows: repeat(3, 1fr);
+    width: 1024px;
+    height: 450px;
+    transform: translateY(-150px);
+    gap: 20px;
+}
+
+.grid-element {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.profile {
+    position: relative;
+    width: 100px;
+    height: 90px;
+    margin-right: 20px;
+}
+
+.grid-element-1 .profile {
+    background: url('../assets/bg1.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.grid-element-2 .profile {
+    background: url('../assets/bg2.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.grid-element-3 .profile {
+    background: url('../assets/bg6.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.grid-element-4 .profile {
+    background: url('../assets/bg8.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.grid-element-5 .profile {
+    background: url('../assets/bg5.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.profile-number {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    background: #fff;
+    font-weight: 800;
+    border-top-right-radius: 8px;
+}
+
+.message {
+    font-weight: 800;
+    line-height: 1.5em;
+}
+
+.message-content {
+    width: 300px;
+    padding: 0 20px;
+    margin-bottom: 15px;
+}
+
+.name {
+    padding: 0 20px;
+    color: #ffcd00;
+}
+
+
+/**
+
+down-container
+ 
+**/
+
+.down-container {
+    position: relative;
+    padding: 0 180px 0 180px;
+}
+
+.down-container .back-title {
+    opacity: 0.5;
+    transform: translateY(-80px) translateX(-100px);
+}
+
+.back-bounce {
+    position: absolute;
+    float: left;
+    z-index: -1000;
+    background: #ffcd00;
+    width: 600px;
+    height: 600px;
+    border-radius: 400px;
+    transform: translateY(-400px) translateX(-100px);
+}
+
+.down-container .form-button {
+    position: absolute;
+    top: 0;
+    right: 180px;
+    width: 200px;
+    padding: 15px;
+    border: 1px solid #193eef;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    transform: translateY(-80px);
+}
+
+.card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background: #f5f6f8;
+    height: 400px;
+    width: 400px;
+}
+
+.card-message {
+    line-height: 1.5em;
+    text-align: center;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.card-name {
+    width: 50px;
+    font-weight: 800;
+    font-size: 3em;
+    transform: translateY(90px) translateX(-90px);
+}
+
+.photo {
+    width: 100px;
+    height: 90px;
+    margin-bottom: 50px;
+}
+
+.card1 .photo {
+    background: url('../assets/bg3.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.card2 .photo {
+    background: url('../assets/bg4.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.card3 .photo {
+    background: url('../assets/bg7.jpg') no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.card-bar {
+    position: absolute;
+    width: 100px;
+    height: 5px;
+    background: #000;
+    bottom: 50px;
+    right: 0;
+}
+
+
+/**
+
+media query
+ 
+**/
+
+@media only screen and (max-width: 1520px) {
+    .form {
+        position: relative;
+        transform: translateX(100px);
+    }
+    .grid-container {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -53,10 +53,12 @@ var vm = new Vue({
     data: {
         sites: [
             { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
+            { id: 2, img: 'projects/ogbon/yourexprnc/preview.png', desc: 'Partage d\'experience', name: 'Yourexprnc', url: 'https://llastkrakw.github.io/30Days30Websites/projects/yourexprnc/' }
         ],
 
         activeItems: [
             { id: 1, img: 'projects/ogbon/assets/preview.png', desc: 'Afica history web project coming soon', name: 'Ogbon', url: 'https://llastkrakw.github.io/30Days30Websites/projects/ogbon/' },
+            { id: 2, img: 'projects/ogbon/yourexprnc/preview.png', desc: 'Partage d\'experience', name: 'Yourexprnc', url: 'https://llastkrakw.github.io/30Days30Websites/projects/yourexprnc/' }
         ],
     },
 
