@@ -401,7 +401,7 @@ media query
  
 **/
 
-@media only screen and (max-width: 1520px) {
+@media only screen and (max-width: 1500px) {
     .form {
         margin: 70px;
         position: relative;
@@ -421,5 +421,17 @@ media query
     }
     .down-container .form-button {
         display: none;
+    }
+    .back-title {
+        font-size: 8em;
+        font-weight: 800;
+        color: #f2f2f2;
+        transform: translateY(-120px) translateX(-150px);
+        z-index: -10000;
+    }
+    .down-container .back-title {
+        font-size: 5em;
+        opacity: 0.5;
+        transform: translateY(-80px) translateX(-100px);
     }
 }
