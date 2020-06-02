@@ -74,7 +74,7 @@ menu
 .active::after {
     content: '';
     display: block;
-    transform: translateY(32px) translateX(-23px);
+    transform: translateY(35px) translateX(-25px);
     width: 100px;
     height: 12px;
     background: #2a2e43;
@@ -403,11 +403,23 @@ media query
 
 @media only screen and (max-width: 1520px) {
     .form {
+        margin: 70px;
         position: relative;
-        transform: translateX(100px);
+        transform: translateX(140px);
     }
     .grid-container {
         display: flex;
         flex-direction: column;
+    }
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+    }
+    .card {
+        margin-bottom: 70px;
+    }
+    .down-container .form-button {
+        display: none;
     }
 }
