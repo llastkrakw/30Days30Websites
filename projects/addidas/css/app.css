@@ -320,7 +320,6 @@ body {
     .choose {
         width: 100%;
         min-height: 550px;
-        margin-bottom: 15px;
         background: url('../assets/bg1.png') no-repeat 50% 50%;
         background-size: contain;
     }
