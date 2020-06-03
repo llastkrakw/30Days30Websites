@@ -17,4 +17,4 @@ And
     - [yourexprnc](https://llastkrakw.github.io/30Days30Websites/projects/yourexprnc/)
     
 3. Addidas   
-   - [yourexprnc](https://llastkrakw.github.io/30Days30Websites/projects/addidas/)
+   - [addidas](https://llastkrakw.github.io/30Days30Websites/projects/addidas/)
