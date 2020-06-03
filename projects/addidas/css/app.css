@@ -1,0 +1,411 @@
+/* all */
+
+
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto', sans-serif;*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #eeeeee;
+}
+
+
+/* Mobile */
+
+@media only screen and (max-width: 1200px) {
+    body {
+        font-size: 12px;
+        height: 100%;
+    }
+    .main {
+        position: relative;
+        padding: 20px;
+        height: 100%;
+    }
+    .header {
+        position: relative;
+        margin-bottom: 20px;
+        height: 70px;
+        font-weight: 700;
+    }
+    .nav-1 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .logo {
+        width: 64px;
+        height: 64px;
+        background: url('../assets/Adidas_logo.png') no-repeat;
+        background-size: contain;
+        margin-bottom: 15px;
+    }
+    .nav-2 {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .nav-1-content {
+        display: flex;
+        flex-direction: column;
+        transform: rotate(90deg);
+        color: #aaaaaa;
+    }
+    .nav-2-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-2-content div {
+        margin-right: 10px;
+    }
+    .search {
+        width: 32px;
+        width: 32px;
+        background: url('../assets/loupe.png') no-repeat;
+        background-size: contain;
+    }
+    .middle {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        color: #323232;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #aaaaaa;
+    }
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider div {
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+        background-color: #aaaaaa;
+        border-radius: 15px;
+    }
+    .active {
+        border: 2px solid #000;
+    }
+    .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.5em;
+    }
+    .color-value {
+        height: 20px;
+        width: 20px;
+        background: #0056ff;
+        border-radius: 20px;
+        margin-left: 15px;
+    }
+    .price {
+        font-size: 3em;
+        font-weight: 900;
+    }
+    .explore {
+        font-size: 2em;
+        font-weight: 900;
+    }
+    .review {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+    .choose {
+        width: 100%;
+        min-height: 150px;
+        margin-bottom: 15px;
+        background: url('../assets/bg1.png') no-repeat 50% 50%;
+        background-size: cover;
+    }
+    .info-2 {
+        margin-bottom: 20px;
+    }
+    .info-2 p,
+    .choose-type {
+        font-size: 1.5em;
+    }
+    .choose-name {
+        font-weight: 900;
+        font-size: 2em;
+        margin-bottom: 8px;
+    }
+    .choose-type {
+        margin-bottom: 5px;
+    }
+    .size {
+        font-size: 1.2em;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    .button-add {
+        background: #000;
+        font-weight: 900;
+        color: #fff;
+        width: 120px;
+        padding: 20px;
+    }
+    .back {
+        position: absolute;
+        top: 30%;
+        left: 25%;
+        background: url('../assets/Adidas_logo.png') no-repeat;
+        background-size: contain;
+        z-index: -2000;
+        width: 200px;
+        height: 300px;
+        opacity: 0.2;
+    }
+    .back-2 {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        background: red;
+        z-index: -2000;
+        width: 200px;
+        height: 200px;
+    }
+}
+
+
+/* Dekstop */
+
+@media only screen and (min-width: 1200px) {
+    body {
+        font-size: 16px;
+        height: 100%;
+    }
+    .main {
+        position: relative;
+        padding: 20px;
+        height: 100%;
+    }
+    .header {
+        position: relative;
+        margin-bottom: 20px;
+        height: 70px;
+        font-weight: 700;
+    }
+    .nav-1 {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+    .logo {
+        width: 100px;
+        height: 100px;
+        background: url('../assets/Adidas_logo.png') no-repeat;
+        background-size: contain;
+        margin-bottom: 15px;
+    }
+    .nav-2 {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        right: 0;
+        top: 0;
+        font-size: 1.2em;
+    }
+    .nav-1-content {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        color: #aaaaaa;
+        margin-left: 50px;
+        font-weight: 500;
+        font-size: 1.5em;
+    }
+    .nav-1-content div {
+        margin-right: 20px;
+    }
+    .nav-2-content {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-2-content div {
+        margin-right: 10px;
+    }
+    .search {
+        width: 32px;
+        width: 32px;
+        background: url('../assets/loupe.png') no-repeat;
+        background-size: contain;
+    }
+    .middle {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        justify-items: center;
+        color: #323232;
+        margin-top: 200px;
+    }
+    .footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        color: #aaaaaa;
+        font-weight: 900;
+        font-size: 2em;
+    }
+    .slider {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+    .slider div {
+        width: 10px;
+        height: 10px;
+        margin-right: 8px;
+        background-color: #aaaaaa;
+        border-radius: 15px;
+    }
+    .active {
+        border: 2px solid #000;
+    }
+    .color {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 2em;
+    }
+    .color-value {
+        height: 60px;
+        width: 60px;
+        background: #0056ff;
+        border-radius: 60px;
+        margin-left: 20px;
+    }
+    .price {
+        font-size: 6em;
+        font-weight: 900;
+    }
+    .explore {
+        font-size: 4em;
+        font-weight: 900;
+    }
+    .review {
+        font-size: 2em;
+        font-weight: 700;
+    }
+    .choose {
+        width: 100%;
+        min-height: 550px;
+        margin-bottom: 15px;
+        background: url('../assets/bg1.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+    .info-1 {
+        width: 300px;
+        height: auto;
+    }
+    .info-2 {
+        margin-bottom: 20px;
+        width: 300px;
+        height: auto;
+    }
+    .info-2 p,
+    .choose-type {
+        font-size: 2em;
+    }
+    .choose-name {
+        font-weight: 900;
+        font-size: 4em;
+        margin-bottom: 8px;
+    }
+    .choose-type {
+        margin-bottom: 5px;
+    }
+    .size {
+        font-size: 1.5em;
+        font-weight: 900;
+        margin-bottom: 5px;
+    }
+    .button-add {
+        background: #000;
+        font-weight: 900;
+        color: #fff;
+        width: 250px;
+        padding: 25px;
+        text-align: center;
+    }
+    .back {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+        background: url('../assets/Adidas_logo.png') no-repeat;
+        background-size: contain;
+        z-index: -2000;
+        width: 900px;
+        height: 700px;
+        opacity: 0.2;
+    }
+    .back-2 {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        background: red;
+        z-index: -2000;
+        width: 400px;
+        height: 400px;
+    }
+}
+
+.footer,
+.header,
+.button-add {
+    cursor: pointer;
+}
+
+.choose {
+    transition: all ease-in-out 2s;
+    animation: choose ease-in-out 15s infinite;
+}
+
+@keyframes choose {
+    0% {
+        background: url('../assets/bg1.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+    25% {
+        background: url('../assets/bg2.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+    50% {
+        background: url('../assets/bg3.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+    100% {
+        background: url('../assets/bg4.png') no-repeat 50% 50%;
+        background-size: contain;
+    }
+}
