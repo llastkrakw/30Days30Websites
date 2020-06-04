@@ -1,0 +1,245 @@
+/**
+
+box-sixing
+
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+ 
+**/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+
+elements
+ 
+**/
+
+body,
+html {
+    overflow: hidden;
+}
+
+body {
+    height: 100%;
+    width: 100%;
+    font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "blue-g red-g dark-g";
+    width: 100%;
+    min-height: 1024px;
+    background: gray;
+    transition: all ease-in-out 2s;
+}
+
+.grid-container-2 {
+    display: grid;
+    grid-template-columns: 30% 40% 30%;
+    grid-template-rows: auto;
+    grid-template-areas: "blue-g red-g dark-g";
+    width: 100%;
+    min-height: 1024px;
+    background: gray;
+    transition: all ease-in-out 2s;
+}
+
+.grid-container-3 {
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    grid-template-rows: auto;
+    grid-template-areas: "blue-g red-g dark-g";
+    width: 100%;
+    min-height: 1024px;
+    background: gray;
+    transition: all ease-in-out 2s;
+}
+
+.grid-element {
+    position: relative;
+    min-width: 100%;
+    border: none;
+    cursor: pointer;
+    transition: all ease-in-out 2s;
+}
+
+.grid-blue {
+    background: #8A2BE2;
+    grid-area: "blue-g";
+}
+
+.grid-red {
+    background: #ff1a1a;
+    grid-area: "red-g";
+}
+
+.grid-dark {
+    background: #0d0d0d;
+    grid-area: "dark-g";
+}
+
+.fond-1 {
+    position: absolute;
+    top: 20%;
+    left: 25%;
+}
+
+.fond-2 {
+    position: absolute;
+    top: 20%;
+    left: 15%;
+}
+
+.fond-3 {
+    position: absolute;
+    top: 20%;
+    left: 30%;
+}
+
+.title {
+    position: absolute;
+    right: 10%;
+    top: 5%;
+    color: #ffff;
+    font-family: 'Merriweather', serif;
+    font-weight: 900;
+    font-size: 5em;
+}
+
+.text-back-1 {
+    position: absolute;
+    color: black;
+    -webkit-text-fill-color: #8A2BE2;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    font-weight: 900;
+    font-size: 8em;
+    font-family: 'Robobo', sans-serif;
+    top: 10%;
+    left: 10%;
+}
+
+.text-back-3 {
+    position: absolute;
+    color: black;
+    -webkit-text-fill-color: black;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #ffd900;
+    font-weight: 900;
+    font-size: 8em;
+    font-family: 'Robobo', sans-serif;
+    top: 40%;
+    left: 10%;
+}
+
+.text-back-2 {
+    position: absolute;
+    color: white;
+    -webkit-text-fill-color: #ff1a1a;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: white;
+    font-weight: 900;
+    font-size: 8em;
+    font-family: 'Robobo', sans-serif;
+    top: 30%;
+    left: 10%;
+}
+
+.circle {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    border-radius: 300px;
+    padding: 20px;
+}
+
+.circle div {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #ffd900;
+    border-radius: 300px;
+    animation: rotate ease-in-out 2s infinite;
+}
+
+.text {
+    color: #fff;
+    font-family: 'Merriweather', serif;
+    font-size: 1.2em;
+    padding: 50px;
+    position: absolute;
+    top: 15%;
+}
+
+.carre {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    width: 300px;
+    height: 300px;
+    border: 2px solid white;
+    padding: 20px;
+}
+
+.carre div {
+    width: 200px;
+    height: 200px;
+    border: 4px solid #ffd900;
+    animation: rotate ease-in-out 2s infinite;
+}
+
+.text-2 {
+    color: #fff;
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    padding: 50px;
+    position: absolute;
+    top: 15%;
+    width: 300px;
+}
+
+.carre-2 {
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
+    width: 150px;
+    height: 150px;
+    border: 4px solid #8A2BE2;
+    padding: 20px;
+}
+
+.carre-2 div {
+    width: 150px;
+    height: 150px;
+    border: 4px solid white;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-360deg);
+    }
+}
