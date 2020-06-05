@@ -22,6 +22,10 @@ elements
 **/
 
 @media only screen and (min-width: 1200px) {
+    body,
+    html {
+        overflow: hidden;
+    }
     body {
         height: 100%;
         width: 100%;
@@ -31,6 +35,7 @@ elements
         font-family: "century gothic";
     }
     .main {
+        position: relative;
         width: 100%;
         height: 100%;
         padding: 40px;
@@ -60,7 +65,7 @@ elements
     .middle {
         position: relative;
         margin-top: 100px;
-        height: 800px;
+        height: 700px;
     }
     .menu {
         position: absolute;
@@ -95,10 +100,10 @@ elements
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #fff;
         font-weight: 900;
-        font-size: 12em;
+        font-size: 15em;
         font-family: 'Robobo', sans-serif;
         bottom: 0;
-        width: 100%;
+        width: 80%;
         z-index: -1000;
         font-family: "Roboto";
     }
