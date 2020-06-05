@@ -22,10 +22,6 @@ elements
 **/
 
 @media only screen and (min-width: 1200px) {
-    body,
-    html {
-        overflow: hidden;
-    }
     body {
         height: 100%;
         width: 100%;
@@ -99,7 +95,7 @@ elements
         -webkit-text-stroke-width: 2px;
         -webkit-text-stroke-color: #fff;
         font-weight: 900;
-        font-size: 15em;
+        font-size: 12em;
         font-family: 'Robobo', sans-serif;
         bottom: 0;
         width: 100%;
