@@ -1,0 +1,372 @@
+/**
+
+box-sixing
+
+font-family: 'Merriweather', serif;
+font-family: 'Playfair Display', serif;
+ 
+**/
+
+* {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+
+/**
+
+elements
+ 
+**/
+
+@media only screen and (min-width: 1200px) {
+    body,
+    html {
+        overflow: hidden;
+    }
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 16px;
+        font-family: 'Montserrat', sans-serif;
+        background: #ffd900;
+        font-family: "century gothic";
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        padding: 40px;
+    }
+    .head {
+        position: relative;
+        font-weight: 700;
+        font-size: 1.3em;
+        font-family: "Roboto";
+    }
+    .items {
+        position: absolute;
+        left: 0;
+        top: 0;
+        display: flex;
+        cursor: pointer;
+        color: #3d3d3d;
+    }
+    .items div {
+        padding-left: 15px;
+        transition: all ease-in-out 0.8s;
+    }
+    .items div:hover,
+    .active {
+        color: #000;
+    }
+    .middle {
+        position: relative;
+        margin-top: 100px;
+        height: 800px;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 100px;
+        height: 5px;
+        background: #000;
+        cursor: pointer;
+    }
+    .menu::after {
+        display: block;
+        content: '';
+        width: 70px;
+        height: 4px;
+        background: #000;
+        margin-top: 10px;
+        cursor: pointer;
+    }
+    .photo {
+        position: absolute;
+        width: 500px;
+        height: 700px;
+        left: 30%;
+        animation: inter-photo ease-in-out 4s forwards;
+    }
+    .back-name {
+        position: absolute;
+        color: #ffd900;
+        -webkit-text-fill-color: #ffd900;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 2px;
+        -webkit-text-stroke-color: #fff;
+        font-weight: 900;
+        font-size: 15em;
+        font-family: 'Robobo', sans-serif;
+        bottom: 0;
+        width: 100%;
+        z-index: -1000;
+        font-family: "Roboto";
+    }
+    .desc {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3em;
+        font-weight: 500;
+        left: 70%;
+    }
+    .name,
+    .name-2 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 5em;
+        font-weight: 600;
+        text-decoration: underline;
+        color: #ff1a1a;
+    }
+    .name {
+        top: 55%;
+        left: 40%;
+    }
+    .name-2 {
+        top: 70%;
+        left: 50%;
+    }
+    .link {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5em;
+        font-weight: 600;
+        top: 90%;
+        left: 60%;
+        cursor: pointer;
+    }
+    .text {
+        position: absolute;
+        font-weight: 300;
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        top: 20%;
+        width: 400px;
+        padding: 20px;
+        left: 70%;
+    }
+    .footer {
+        position: relative;
+    }
+    .social-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .social {
+        cursor: pointer;
+        width: 32px;
+        height: 32px;
+        margin-right: 40px;
+    }
+    .slider {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .slider div {
+        width: 32px;
+        height: 32px;
+        border-radius: 32px;
+        border: 2px solid #ff1a1a;
+        margin-left: 40px;
+    }
+    .slider-active {
+        background: #ff1a1a;
+    }
+}
+
+
+/***Mobile****/
+
+@media only screen and (max-width: 1200px) {
+    body {
+        height: 100%;
+        width: 100%;
+        font-size: 12px;
+        font-family: 'Montserrat', sans-serif;
+        background: #ffd900;
+        font-family: "century gothic";
+    }
+    .main {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+    }
+    .head {
+        position: relative;
+        font-weight: 700;
+        font-family: "Roboto";
+    }
+    .items {
+        position: absolute;
+        left: 0;
+        top: 0;
+        padding-top: 10px;
+        display: flex;
+        cursor: pointer;
+        color: #3d3d3d;
+        font-size: 1em;
+    }
+    .items div {
+        padding-left: 5px;
+        transition: all ease-in-out 0.8s;
+    }
+    .items div:hover,
+    .active {
+        color: #000;
+    }
+    .middle {
+        position: relative;
+        margin-top: 100px;
+        height: 600px;
+    }
+    .menu {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 20px;
+        height: 3px;
+        background: #000;
+        cursor: pointer;
+    }
+    .menu::after {
+        display: block;
+        content: '';
+        width: 10px;
+        height: 2px;
+        background: #000;
+        margin-top: 5px;
+        cursor: pointer;
+    }
+    .photo {
+        position: absolute;
+        width: 200px;
+        height: 250px;
+        left: 10%;
+    }
+    .back-name {
+        position: absolute;
+        color: #ffd900;
+        -webkit-text-fill-color: #ffd900;
+        /* Will override color (regardless of order) */
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #fff;
+        font-weight: 900;
+        font-size: 5em;
+        font-family: 'Robobo', sans-serif;
+        width: 100%;
+        z-index: -1000;
+        font-family: "Roboto";
+    }
+    .desc {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 2em;
+        font-weight: 500;
+        top: 55%;
+        left: 15%;
+    }
+    .name,
+    .name-2 {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 3em;
+        font-weight: 600;
+        text-decoration: underline;
+        color: #ff1a1a;
+    }
+    .name {
+        top: 25%;
+        left: 20%;
+    }
+    .name-2 {
+        top: 35%;
+        left: 30%;
+    }
+    .link {
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        position: absolute;
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.2em;
+        font-weight: 600;
+        top: 45%;
+        left: 50%;
+        cursor: pointer;
+    }
+    .text {
+        position: absolute;
+        font-weight: 300;
+        font-size: 1.5em;
+        font-family: 'Poppins', sans-serif;
+        top: 65%;
+        width: 300px;
+        padding-right: 15px;
+        left: 15%;
+    }
+    .footer {
+        margin-top: 50px;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
+    .social-container {
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+    .social {
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        margin-right: 5px;
+    }
+    .slider {
+        display: flex;
+        position: absolute;
+        right: 0;
+        top: 0
+    }
+    .slider div {
+        width: 15px;
+        height: 15px;
+        border-radius: 15px;
+        border: 2px solid #ff1a1a;
+        margin-left: 5px;
+    }
+    .slider-active {
+        background: #ff1a1a;
+    }
+}
+
+@keyframes inter-photo {
+    from {
+        transform: translateX(-200px);
+        opacity: 0.6;
+    }
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes op {
+    from {
+        transform: translateY(500px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
